@@ -1,0 +1,366 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: 2s linear;
+    }
+
+    body {
+      background: #fff8f0;
+
+    }
+
+    header {
+      background: hsl(0, 85%, 69%);
+      padding: 10px;
+      color: white;
+      text-align: center;
+      z-index: 1000;
+      position: fixed;
+      display: flex;
+      top: 0;
+      left: 0;
+      right: 0;
+      align-items: center;
+      justify-content: space-between;
+      }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header .icons a{
+        font-size: 30px;
+        color: black;
+        margin-left: 15px;
+    }
+     header .icons a:hover{
+       
+        color: rgb(13, 153, 218);
+       
+    }
+    
+
+
+    .home {
+
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(1.jpg);
+      background-size: cover;
+      margin-bottom: 150px;
+
+      padding: 60px 20px;
+      text-align: center;
+
+    }
+
+    .home .content {
+      max-width: 500px;
+    }
+
+    .home .content h3 {
+      font-size: 40px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .home .content span {
+      font-size: 20px;
+      color: rgb(241, 205, 205);
+      text-shadow: 1px 1px 4px #000;
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+
+    .home .content p {
+      font-size: 15px;
+      color: white;
+
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+
+    .hero {
+      background: url("E:\b009a1f12e4a9bfc2b5681aa417e380b.jpg") no-repeat center center;
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .products {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .products .card_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap:20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    
+
+    .card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    
+
+    .card h3 {
+      padding: 15px 10px 5px;
+      font-size: 1.2em;
+    }
+
+    
+
+    .review1 {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .reviews-container {
+  height: 400px;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card1 {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1 img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+    .contact {
+      background: #ffe9e3;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+
+    .contact h2 {
+      font-size: 50px;
+      margin-bottom: 100px;
+    }
+
+   
+
+    .heading {
+      text-align: center;
+      font-size: 40px;
+      padding: 10px;
+      color: black;
+      margin: 20px 0;
+      background-color: rgba(255, 51, 184, 0.05);
+    }
+
+    .heading span {
+      color: #ef8fcc;
+    }
+
+    .about .row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      padding-bottom: 30px;
+    }
+
+    .about .row .video_container {
+
+      flex: 1 1 200px;
+      position: relative;
+      justify-content: space-between;
+
+    }
+
+    .about .row .video_container video {
+      height: 10%;
+      width: 100%;
+      border: 15px solid white;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      flex: 1;
+
+    }
+
+    .about .row .video_container h3 {
+
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      background-color: white;
+      width: 100%;
+      padding: 10px 20px;
+      text-align: center;
+      mix-blend-mode: screen;
+    }
+
+    .about .row .content {
+      display: flex;
+      padding-right: 10px;
+
+    }
+
+    .about .row .content h3 {
+      font-size: 30px;
+      color: #000;
+
+
+
+    }
+
+    .about .row .content p {
+      font-size: 15px;
+      color: #141213;
+      padding: 5px 0;
+      padding-top: 10px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      width: 70;
+
+    }
+    .icons_container{
+        background-color: #f7bfbf;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .icons_container .icons{
+        background-color: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        padding: 20px ;
+        display: flex;
+        align-items: center;
+        flex: 1 1 250px;
+    }
+    .icons_container .icons i{
+     font-size: 50px;
+     margin-right: 20px;
+     color: #333;
+    }
+
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      background: #f36c6c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #heart-toggle {
+      display: none;
+    }
+
+    /* Style the label to look like a heart */
+    .heart-label {
+      font-size: 40px;
+      color: gray;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    /* When checkbox is checked, make heart red */
+    #heart-toggle:checked + .heart-label {
+      color: red;
+    }
+
+    /* Hide the liked items by default */
+    .liked-items {
+      display: none;
+      margin-top: 20px;
+    }
+
+    /* Show items when heart is checked */
+    #heart-toggle:checked ~ .liked-items {
+      display: block;
+    }
+
+    footer {
+      background: #f36c6c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      
+    }
+      
+  
